@@ -1,0 +1,183 @@
+.fc-wrapper {
+  min-height: 100vh;
+  background: #f8fafc;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.page-header {
+  background: #fff;
+  border-bottom: 1px solid #f1f5f9;
+  padding: 24px 36px;
+}
+.page-header h1 { font-size: 20px; font-weight: 700; color: #0f172a; margin: 0 0 4px; }
+.page-header p  { font-size: 13px; color: #94a3b8; margin: 0; }
+
+.fc-body {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 36px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Progress */
+.fc-progress-bar-wrap { width: 100%; }
+.fc-progress-info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: #94a3b8;
+  margin-bottom: 8px;
+}
+.fc-progress-track {
+  height: 6px;
+  background: #e2e8f0;
+  border-radius: 4px;
+  overflow: hidden;
+}
+.fc-progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #4f46e5, #7c3aed);
+  border-radius: 4px;
+  transition: width 0.4s ease;
+}
+
+/* Card */
+.fc-card {
+  width: 100%;
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 20px;
+  padding: 48px 36px;
+  min-height: 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  cursor: pointer;
+  transition: box-shadow 0.2s;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+.fc-card:hover { box-shadow: 0 8px 24px rgba(79,70,229,0.1); }
+.fc-card.flipped { border-color: #c7d2fe; background: #fafbff; cursor: default; }
+
+.fc-card-side-label {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #c7d2fe;
+  margin-bottom: 16px;
+}
+.fc-card.flipped .fc-card-side-label { color: #4f46e5; }
+
+.fc-card-text {
+  font-size: 16px;
+  font-weight: 500;
+  color: #0f172a;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.fc-card-hint {
+  font-size: 12px;
+  color: #cbd5e1;
+  margin-top: 20px;
+}
+
+/* Show answer button */
+.fc-show-btn {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(135deg, #4f46e5, #7c3aed);
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+.fc-show-btn:hover { opacity: 0.9; }
+
+/* Ratings */
+.fc-ratings { width: 100%; }
+.fc-ratings-label { font-size: 13px; color: #94a3b8; text-align: center; margin-bottom: 12px; }
+.fc-ratings-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; }
+
+.fc-rating-btn {
+  padding: 12px 8px;
+  border-radius: 12px;
+  border: 1.5px solid;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.rating-again { background: #fef2f2; color: #dc2626; border-color: #fecaca; }
+.rating-again:hover { background: #fee2e2; }
+.rating-hard  { background: #fffbeb; color: #d97706; border-color: #fde68a; }
+.rating-hard:hover  { background: #fef3c7; }
+.rating-good  { background: #eef2ff; color: #4f46e5; border-color: #c7d2fe; }
+.rating-good:hover  { background: #e0e7ff; }
+.rating-easy  { background: #f0fdf4; color: #059669; border-color: #a7f3d0; }
+.rating-easy:hover  { background: #dcfce7; }
+
+/* Complete screen */
+.fc-complete {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.fc-complete-card {
+  background: #fff;
+  border: 1px solid #f1f5f9;
+  border-radius: 20px;
+  padding: 48px 40px;
+  text-align: center;
+  max-width: 400px;
+  width: 100%;
+}
+
+.fc-complete-emoji { font-size: 48px; margin-bottom: 16px; }
+.fc-complete-card h2 { font-size: 22px; font-weight: 700; color: #0f172a; margin: 0 0 8px; }
+.fc-complete-card p  { font-size: 14px; color: #94a3b8; margin: 0 0 28px; }
+
+.fc-results-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin-bottom: 28px;
+}
+
+.fc-result-item {
+  border-radius: 12px;
+  border: 1.5px solid;
+  padding: 12px 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.fc-result-count { font-size: 22px; font-weight: 800; }
+.fc-result-label { font-size: 11px; font-weight: 600; }
+
+.fc-restart-btn {
+  padding: 12px 28px;
+  background: #4f46e5;
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+.fc-restart-btn:hover { opacity: 0.9; }
